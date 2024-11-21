@@ -1,8 +1,8 @@
 document.querySelector("body").classList.add("style");
 
 //Add the sound effect
-var soundEffect = new Audio('sound/sound_1.mp3');
-                    soundEffect.play();
+var audio = new Audio('https://github.com/user/project/blob/main/audio/sound.mp3?raw=true');
+    audio.play();
 
  
 // Select the button using its ID
