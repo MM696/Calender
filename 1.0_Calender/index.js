@@ -1,5 +1,5 @@
 //Add the sound Effect
-var soundEffect = new Audio('sound/sound1.mp3');
+var soundEffect = new Audio('sound/sound_1.mp3');
 soundEffect.play();
 
 // Function to add event listener and handle class toggling
