@@ -1,0 +1,121 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+.container {
+  height: 100vh;
+  width: 100vh;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 13rem);
+  grid-template-rows: repeat(7, 13rem);
+}
+
+.box {
+  font-size: 3rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  background-color: #A20A0A;
+  text-align: center;
+  border-style: double;
+  border-color: white;
+}
+
+#instruction {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: xx-large;
+  border: 0;
+  border-radius: 4px;
+  background-color: white;
+  color: #A20A0A;
+}
+
+/* Image classes */
+[class^="pic"] {
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image fills its container */
+  width: 100%;
+}
+
+.pic1 { background-image: url('images/pic1.png'); }
+.pic2 { background-image: url('images/pic2.png'); }
+.pic3 { background-image: url('images/pic3.png'); }
+.pic4 { background-image: url('images/pic4.png'); }
+.pic5 { background-image: url('images/pic5.png'); }
+.pic6 { background-image: url('images/pic6.png'); }
+.pic7 { background-image: url('images/pic7.png'); }
+.pic8 { background-image: url('images/pic8.png'); }
+.pic9 { background-image: url('images/pic9.png'); }
+.pic10 { background-image: url('images/pic10.png'); }
+.pic11 { background-image: url('images/pic11.png'); }
+.pic12 { background-image: url('images/pic12.png'); }
+.pic13 { background-image: url('images/pic13.png'); }
+.pic14 { background-image: url('images/pic14.png'); }
+.pic15 { background-image: url('images/pic15.png'); }
+.pic16 { background-image: url('images/pic16.png'); }
+.pic17 { background-image: url('images/pic17.png'); }
+.pic18 { background-image: url('images/pic18.png'); }
+.pic19 { background-image: url('images/pic19.png'); }
+.pic20 { background-image: url('images/pic20.png'); }
+.pic21 { background-image: url('images/pic21.png'); }
+.pic22 { background-image: url('images/pic22.png'); }
+.pic23 { background-image: url('images/pic23.png'); }
+.pic24 { background-image: url('images/pic24.png'); }
+.pic25 { background-image: url('images/pic25.png'); }
+
+/* Responsive breakpoints */
+@media (max-width: 475px) {
+body {
+  width: 50px;
+}
+
+  .container { 
+    width: 200px;
+    gap: 50px;
+  grid-template-columns: repeat(1, 13rem);
+  grid-template-rows: repeat(25, 13rem);
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+#instruction  {
+  font-size: 17px;
+  width: 200px;
+  margin: 50px;
+  margin-top: 100px; 
+  
+}
+
+}
+
+@media (min-width: 640px) {
+  
+  }
+
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    min-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    min-width: 1536px;
+  }
+}
