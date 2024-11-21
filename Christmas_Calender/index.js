@@ -7,7 +7,7 @@ var soundEffect = new Audio('sound/sound_1.mp3');
  
 // Select the button using its ID
 // Select the button
-var button = document.getElementById("myButton");
+var button = document.querySelector("a");
 
 // Add a click event listener
 button.addEventListener("click", function () {
