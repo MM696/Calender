@@ -1,10 +1,6 @@
+// Select the body using classlist
 document.querySelector("body").classList.add("style");
 
-//Add the sound effect
-var soundEffect = new Audio('sound/sound_1.mp3');
-                    soundEffect.play();
-
- 
 // Select the button using its ID
 // Select the button
 var button = document.querySelector("a");
