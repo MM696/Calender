@@ -25,7 +25,9 @@ h1 {
   color: #A20A0A;
   background-color: whitesmoke;
   display: inline-block;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
+  margin-top: 15rem;
+  width: 100%; 
 }
 
 a {
@@ -65,7 +67,7 @@ a:hover {
   }
 
   #container {
-    width: 90%; 
+    width: 100%; 
   }
 }
 
@@ -123,7 +125,7 @@ a:hover {
 
 @media (max-width: 1536px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     top: 180px;
   }
 
