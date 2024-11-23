@@ -1,6 +1,3 @@
-var audio = new Audio('sound/sound-1.mp3');
-audio.play()
-
 // Select the body using classlist
 document.querySelector("body").classList.add("style");
 
