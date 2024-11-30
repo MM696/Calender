@@ -21,6 +21,7 @@
   text-align: center;
   border-style: double;
   border-color: white;
+  border-radius: 20px;
 }
 
 #instruction {
