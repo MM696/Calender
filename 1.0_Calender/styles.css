@@ -86,8 +86,32 @@ body {
   width: 100%;
 }
 
+
 .pic1 { background-image: url('images/pic1.png'); }
 .pic2 { background-image: url('images/pic2.png'); }
+.pic3 { background-image: url('images/pic3.png'); }
+.pic4 { background-image: url('images/pic4.png'); }
+.pic5 { background-image: url('images/pic5.png'); }
+.pic6 { background-image: url('images/pic6.png'); }
+.pic7 { background-image: url('images/pic7.png'); }
+.pic8 { background-image: url('images/pic8.png'); }
+.pic9 { background-image: url('images/pic9.png'); }
+.pic10 { background-image: url('images/pic10.png'); }
+.pic11 { background-image: url('images/pic11.png'); }
+.pic12 { background-image: url('images/pic12.png'); }
+.pic13 { background-image: url('images/pic13.png'); }
+.pic14 { background-image: url('images/pic14.png'); }
+.pic15 { background-image: url('images/pic15.png'); }
+.pic16 { background-image: url('images/pic16.png'); }
+.pic17 { background-image: url('images/pic17.png'); }
+.pic18 { background-image: url('images/pic18.png'); }
+.pic19 { background-image: url('images/pic19.png'); }
+.pic20 { background-image: url('images/pic20.png'); }
+.pic21 { background-image: url('images/pic21.png'); }
+.pic22 { background-image: url('images/pic22.png'); }
+.pic23 { background-image: url('images/pic23.png'); }
+.pic24 { background-image: url('images/pic24.png'); }
+.pic25 { background-image: url('images/pic25.png'); }
 /* Add the rest of the pic classes here */
 
 /* Responsive Breakpoints */
@@ -155,3 +179,4 @@ body {
     margin-top: 1rem;
   }
 }
+
