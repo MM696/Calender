@@ -68,7 +68,7 @@ body {
 
 #clockdiv div > span {
   display: inline-block;
-  height: 15vh;
+  height: 9vh;
   width: 9vh;
   padding: 15px;
   border-radius: 3px;
