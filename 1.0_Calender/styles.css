@@ -1,37 +1,82 @@
- body {
+/* Base Styles */
+body {
   margin: 0;
   padding: 0;
   background-color: antiquewhite;
+  width: 100%; /* Ensure full width scaling */
 }
 
 .container {
-  height: 100vh;
+  height: 30vh;
   width: 100vh;
   display: grid;
   gap: 0.5rem;
   grid-template-columns: repeat(7, 13rem);
   grid-template-rows: repeat(7, 13rem);
+  margin: 1rem auto; /* Center the container */
 }
 
 .box {
   font-size: 3rem;
   color: white;
   font-family: "Dancing Script", cursive;
-  background-color: #A20A0A;
+  background-color: #a20a0a;
   text-align: center;
   border-style: double;
   border-color: white;
   border-radius: 20px;
 }
 
-#instruction {
+.instruction {
+  position: relative;
+  left: 5vh;
+  width: 260vh;
+  text-align: center;
+  letter-spacing: 1px;
   font-family: "Dancing Script", cursive;
   font-weight: 900;
   font-size: xx-large;
   border: 0;
   border-radius: 4px;
   background-color: white;
-  color: #A20A0A;
+  color: #a20a0a;
+}
+
+#clockdiv img[src="./images/pic27.png"] {
+  position: relative;
+  left: 4vh;
+  margin-top: 3vh;
+}
+
+#clockdiv {
+  color: #a20a0a;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  height: 20vh;
+  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#clockdiv div > span {
+  display: inline-block;
+  height: 15vh;
+  width: 9vh;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.smalltext {
+  padding-top: 5px;
 }
 
 /* Image classes */
@@ -43,103 +88,23 @@
 
 .pic1 { background-image: url('images/pic1.png'); }
 .pic2 { background-image: url('images/pic2.png'); }
-.pic3 { background-image: url('images/pic3.png'); }
-.pic4 { background-image: url('images/pic4.png'); }
-.pic5 { background-image: url('images/pic5.png'); }
-.pic6 { background-image: url('images/pic6.png'); }
-.pic7 { background-image: url('images/pic7.png'); }
-.pic8 { background-image: url('images/pic8.png'); }
-.pic9 { background-image: url('images/pic9.png'); }
-.pic10 { background-image: url('images/pic10.png'); }
-.pic11 { background-image: url('images/pic11.png'); }
-.pic12 { background-image: url('images/pic12.png'); }
-.pic13 { background-image: url('images/pic13.png'); }
-.pic14 { background-image: url('images/pic14.png'); }
-.pic15 { background-image: url('images/pic15.png'); }
-.pic16 { background-image: url('images/pic16.png'); }
-.pic17 { background-image: url('images/pic17.png'); }
-.pic18 { background-image: url('images/pic18.png'); }
-.pic19 { background-image: url('images/pic19.png'); }
-.pic20 { background-image: url('images/pic20.png'); }
-.pic21 { background-image: url('images/pic21.png'); }
-.pic22 { background-image: url('images/pic22.png'); }
-.pic23 { background-image: url('images/pic23.png'); }
-.pic24 { background-image: url('images/pic24.png'); }
-.pic25 { background-image: url('images/pic25.png'); }
-
-
-/* Base Styles */
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%; /* Ensure full width scaling */
-}
-
-.container {
-  display: grid;
-  gap: 1rem; /* Unified spacing */
-  margin: 1rem auto; /* Center the container */
-}
-
-#instruction {
-  font-size: 1.2rem; /* Default size */
-  margin: 1rem auto; /* Center and add space */
-  text-align: center; /* Ensure content is centered */
-  max-width: 800px; /* Constrain maximum width */
-}
+/* Add the rest of the pic classes here */
 
 /* Responsive Breakpoints */
-@media (max-width: 475px) {
-  body {
-    width: auto; /* Allow dynamic scaling */
-  }
-
+@media (max-width: 1536px) {
   .container {
-    width: 90%; /* Relative width for better scaling */
-    gap: 0.5rem; /* Adjust spacing */
-    margin-left: 0; /* Remove excessive left margin */
-    margin-top: 1rem;
-  }
-
-  #instruction {
-    font-size: 0.85rem; /* Smaller text size */
-    max-width: 90%; /* Constrain width */
+    width: 90%;
+    max-width: 1400px; /* Slightly reduce max width */
+    gap: 2rem;
   }
 }
 
-@media (max-width: 640px) {
-  body {
-    width: auto;
-  }
-
+@media (max-width: 1280px) {
   .container {
-    width: 95%;
-    gap: 0.75rem;
-    margin-left: 0; /* Adjust for small screens */
-    margin-top: 1rem;
-  }
-
-  #instruction {
-    font-size: 1rem;
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    width: auto;
-  }
-
-  .container {
-    width: 95%;
-    gap: 1rem;
+    width: 85%;
+    gap: 1.5rem;
     margin-left: 0;
     margin-top: 1rem;
-  }
-
-  #instruction {
-    font-size: 1.25rem;
-    max-width: 85%;
   }
 }
 
@@ -147,47 +112,46 @@ body {
   body {
     width: auto;
   }
-
   .container {
-    width: 95%;
+    width: 80%;
     gap: 1.5rem;
     margin-left: 0;
     margin-top: 1rem;
   }
-
-  #instruction {
-    font-size: 1.5rem;
-    max-width: 85%;
-  }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   body {
     width: auto;
   }
-
   .container {
-    width: 100%;
-    gap: 1.5rem;
+    width: 75%;
+    gap: 1rem;
     margin-left: 0;
     margin-top: 1rem;
   }
+}
 
-  #instruction {
-    font-size: 1.75rem;
-    max-width: 85%;
+@media (max-width: 640px) {
+  body {
+    width: auto;
+  }
+  .container {
+    width: 70%;
+    gap: 0.75rem;
+    margin-left: 0; /* Adjust for small screens */
+    margin-top: 1rem;
   }
 }
 
-@media (max-width: 1536px) {
-  .container {
-    width: 100%;
-    max-width: 1536px; /* Maintain grid width */
-    gap: 2rem;
+@media (max-width: 475px) {
+  body {
+    width: auto; /* Allow dynamic scaling */
   }
-
-  #instruction {
-    font-size: 2rem;
-    max-width: 90%;
+  .container {
+    width: 65%; /* Reduced further for narrow screens */
+    gap: 0.5rem; /* Adjust spacing */
+    margin-left: 0; /* Remove excessive left margin */
+    margin-top: 1rem;
   }
 }
