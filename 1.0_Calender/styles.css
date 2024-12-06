@@ -29,8 +29,7 @@ body {
 
 .instruction {
   position: relative;
-  left: 5vh;
-  width: 260vh;
+  width: 170vh;
   text-align: center;
   letter-spacing: 1px;
   font-family: "Dancing Script", cursive;
@@ -73,6 +72,7 @@ body {
   padding: 15px;
   border-radius: 3px;
   background-color: white;
+  text-align: center;
 }
 
 .smalltext {
@@ -171,8 +171,12 @@ body {
 @media (max-width: 475px) {
   body {
     width: auto; /* Allow dynamic scaling */
+    margin-left: 1vh;
   }
   .container {
+    position: relative;
+    left: 2vh;
+    height: 20vh;
     width: 65%; /* Reduced further for narrow screens */
     gap: 0.5rem; /* Adjust spacing */
     margin-left: 0; /* Remove excessive left margin */
