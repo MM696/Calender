@@ -29,7 +29,8 @@ body {
 
 .instruction {
   position: relative;
-  width: 170vh;
+  left: 6vh;
+  width: 260vh;
   text-align: center;
   letter-spacing: 1px;
   font-family: "Dancing Script", cursive;
@@ -131,6 +132,10 @@ body {
     margin-left: 0;
     margin-top: 1rem;
   }
+
+  .instruction {
+    width: 190vh;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -176,12 +181,16 @@ body {
   }
   .container {
     position: relative;
-    left: 2vh;
+    left: 1vh;
     height: 20vh;
     width: 65%; /* Reduced further for narrow screens */
     gap: 0.5rem; /* Adjust spacing */
     margin-left: 0; /* Remove excessive left margin */
     margin-top: 1rem;
+  }
+
+  .instruction {
+    width: 190vh;
   }
 }
 
