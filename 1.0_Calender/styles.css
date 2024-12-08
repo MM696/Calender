@@ -84,7 +84,7 @@ body {
 /* Image classes */
 [class^="pic"] {
   background-repeat: no-repeat;
-  background-size: cover; /* Ensures the image fills its container */
+  background-size: cover; 
   width: 100%;
 }
 
@@ -114,83 +114,114 @@ body {
 .pic23 { background-image: url('images/pic23.png'); }
 .pic24 { background-image: url('images/pic24.png'); }
 .pic25 { background-image: url('images/pic25.png'); }
-/* Add the rest of the pic classes here */
 
-/* Responsive Breakpoints */
-@media (max-width: 1536px) {
+/* Responsive Media Queries */
+
+/* 320px - 480px: Small phones */
+@media (max-width: 480px) {
   .container {
-    width: 90%;
-    max-width: 1400px; /* Slightly reduce max width */
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .container {
-    width: 85%;
-    gap: 1.5rem;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-
-  .instruction {
-    width: 190vh;
-  }
-}
-
-@media (max-width: 1024px) {
-  body {
-    width: auto;
-  }
-  .container {
-    width: 80%;
-    gap: 1.5rem;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    width: auto;
-  }
-  .container {
-    width: 75%;
-    gap: 1rem;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 640px) {
-  body {
-    width: auto;
-  }
-  .container {
-    width: 70%;
-    gap: 0.75rem;
-    margin-left: 0; /* Adjust for small screens */
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 475px) {
-  body {
-    width: auto; /* Allow dynamic scaling */
-    margin-left: 1vh;
-  }
-  .container {
-    position: relative;
-    left: 1vh;
+    margin: 0.5rem auto;
+    gap: 0.25rem;
     height: 20vh;
-    width: 65%; /* Reduced further for narrow screens */
-    gap: 0.5rem; /* Adjust spacing */
-    margin-left: 0; /* Remove excessive left margin */
-    margin-top: 1rem;
+
   }
 
   .instruction {
-    width: 190vh;
+    width: 150vh;
+    margin: 0 auto;
+  }
+
+  #clockdiv {
+    width: 100%;
+    align-items: center;
+  }
+
+  #clockdiv div > span {
+    height: 7vh;
+    width: 7vh;
+    padding: 10px;
   }
 }
 
+/* 481px - 768px: Tablets and small devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 1rem auto;
+    gap: 0.5rem;
+  }
+
+  .instruction {
+    width: 200vh;
+    
+  }
+
+  #clockdiv {
+    width: 100%;
+  }
+
+  #clockdiv div > span {
+    height: 8vh;
+    width: 8vh;
+    padding: 12px;
+  }
+}
+
+/* 769px - 1024px: Medium devices (landscape tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    margin: 1.5rem auto;
+    gap: 0.75rem;
+    margin-left: 2vh;
+    height: 19vh;
+  }
+
+
+  #clockdiv div > span {
+    height: 9vh;
+    width: 9vh;
+    padding: 15px;
+  }
+
+  .instruction {
+    width: 120vh;
+
+  }
+}
+
+/* 1025px - 1200px: Large devices (small desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    margin: 2rem auto;
+    gap: 1rem;
+  }
+
+  .instruction {
+    width: 75%;
+  }
+
+  #clockdiv div > span {
+    height: 9vh;
+    width: 9vh;
+    padding: 18px;
+  }
+}
+
+/* 1201px and above: Extra-large devices (desktops) */
+@media (min-width: 1201px) {
+  .container {
+    height: 25vh;
+    margin: 2rem auto;
+    gap: 1rem;
+    margin-left: 2vh;
+  }
+
+  .instruction {
+    width: 200vh;
+  }
+
+  #clockdiv div > span {
+    height: 9vh;
+    width: 9vh;
+    padding: 20px;
+  }
+}
