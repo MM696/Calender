@@ -1,15 +1,15 @@
-// Getting formated date from date string
-let deadline = new Date("jan 1, 2025 00:00:00").getTime();
+// Getting formatted date from date string
+let deadline = new Date("Dec 10, 2024 00:00:00").getTime();
 
-// Calling defined function at certain interval
+// Calling defined function at certain intervals
 let x = setInterval(function () {
-  // Getting current date and time in required format
+  // Getting current date and time
   let now = new Date().getTime();
 
   // Calculating difference
   let t = deadline - now;
 
-  // Getting values of days,hours,minutes, seconds
+  // Getting values of days, hours, minutes, seconds
   let days = Math.floor(t / (1000 * 60 * 60 * 24));
   let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
@@ -21,6 +21,15 @@ let x = setInterval(function () {
   document.getElementById("minute").innerHTML = minutes;
   document.getElementById("second").innerHTML = seconds;
 
+  // Trigger image popup at specific times
+  if (days === 0 && hours === 0 && minutes === 0 && seconds === 10) {
+    showImagePopup("./images/img_1.gif"); // Replace with your 10-second image path
+  }
+
+  if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+    showImagePopup("./images/img_3.gif"); // Replace with your 0-second image path
+  }
+
   // Show overtime output
   if (t < 0) {
     clearInterval(x);
@@ -31,3 +40,36 @@ let x = setInterval(function () {
     document.getElementById("second").innerHTML = "0";
   }
 }, 1000);
+
+// Function to show the image popup
+function showImagePopup(imagePath) {
+  // Create a modal overlay
+  let overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "1000";
+
+  // Create the image element
+  let image = document.createElement("img");
+  image.src = imagePath; // Use the provided image path
+  image.style.width = "80%";
+  image.style.height = "auto";
+
+  // Append image to overlay
+  overlay.appendChild(image);
+
+  // Append overlay to body
+  document.body.appendChild(overlay);
+
+  // Close the popup when overlay is clicked
+  overlay.addEventListener("click", function () {
+    document.body.removeChild(overlay);
+  });
+}
