@@ -176,6 +176,9 @@ body {
     height: 19vh;
   }
 
+  #clockdiv {
+    height: 0;
+  }
 
   #clockdiv div > span {
     height: 9vh;

@@ -1,25 +1,40 @@
 body {
-    background-color: #FCFFC1;
+  height: 90%;
+  background: linear-gradient(300deg, #697565, #3C3D37, #1E201E, #01090a);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #title {
     position: relative;
     text-align: center;
-    margin-top: 10vh;
-        font-family: "Abril Fatface", serif;
-        font-weight: 700;
-        font-style: normal;  
-        font-size: 5rem;   
-        color: #FCC737;
-}
+    margin-top: 10vh; 
+        font-size: 4rem;   
+        color: #f2f2f2;
+          font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;}
+
 
 #clockdiv {
     position: relative;
     text-align: center;
     left: 50vh;
     margin-top: 10vh;
-    color: #493628;
-    font-family: "Abril Fatface", serif;
+    color: #f2f2f2;
+    font-family: "Ultra", serif;
     font-weight: bolder;
     font-size: 30px;
     height: 20vh;
@@ -102,3 +117,129 @@ body {
     color: #000;
     cursor: pointer;
   }
+
+  /* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  #title {
+    font-size: 2rem; /* Adjusted for smaller screens */
+  }
+
+  #clockdiv {
+    width: 100%;
+    margin: 5vh auto;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  #clockdiv div > span {
+    height: 10vh;
+    width: 10vh;
+    padding: 8px;
+    font-size: 40px;
+  }
+
+  #popup {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Small Devices (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  #title {
+    font-size: 3rem;
+  }
+
+  #clockdiv {
+    width: 90%;
+    margin: 7vh auto;
+    font-size: 25px;
+  }
+
+  #clockdiv div > span {
+    height: 15vh;
+    width: 15vh;
+    padding: 12px;
+    font-size: 60px;
+  }
+
+  #popup {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+/* Medium Devices (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #title {
+    font-size: 3.5rem;
+  }
+
+  #clockdiv {
+    width: 75%;
+    margin: 8vh auto;
+    font-size: 28px;
+  }
+
+  #clockdiv div > span {
+    height: 18vh;
+    width: 18vh;
+    padding: 14px;
+    font-size: 70px;
+  }
+
+  #popup {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
+
+/* Large Devices (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #title {
+    font-size: 4rem;
+  }
+
+  #clockdiv {
+    width: 60%;
+    margin: 10vh auto;
+    font-size: 30px;
+  }
+
+  #clockdiv div > span {
+    height: 20vh;
+    width: 20vh;
+    padding: 15px;
+    font-size: 80px;
+  }
+
+  #popup {
+    font-size: 22px;
+    padding: 18px 36px;
+  }
+}
+
+/* Extra Large Devices (1201px and above) */
+@media (min-width: 1201px) {
+  #title {
+    font-size: 4.5rem;
+  }
+
+  #clockdiv {
+    width: 50%;
+    margin: 10vh auto;
+    font-size: 30px;
+  }
+
+  #clockdiv div > span {
+    height: 20vh;
+    width: 20vh;
+    padding: 15px;
+    font-size: 80px;
+  }
+
+  #popup {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+}

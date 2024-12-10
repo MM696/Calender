@@ -23,11 +23,11 @@ let x = setInterval(function () {
 
   // Trigger image popup at specific times
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 10) {
-    showImagePopup("./images/img_1.gif"); // Replace with your 10-second image path
+    showImagePopup("./images/img_1.gif"); 
   }
 
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-    showImagePopup("./images/img_3.gif"); // Replace with your 0-second image path
+    showImagePopup("./images/img_3.gif"); 
   }
 
   // Show overtime output
@@ -58,7 +58,7 @@ function showImagePopup(imagePath) {
 
   // Create the image element
   let image = document.createElement("img");
-  image.src = imagePath; // Use the provided image path
+  image.src = imagePath; 
   image.style.width = "80%";
   image.style.height = "auto";
 
