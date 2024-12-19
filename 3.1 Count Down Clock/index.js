@@ -102,6 +102,4 @@ function shrink() {
     }
     else
         setTimeout("exp()",100);
-
-
 }
