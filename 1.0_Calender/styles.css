@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  height: 30vh;
+  height: 20vh;
   width: 100vh;
   display: grid;
   gap: 0.5rem;
@@ -28,9 +28,6 @@ body {
 }
 
 .instruction {
-  position: relative;
-  left: 6vh;
-  width: 260vh;
   text-align: center;
   letter-spacing: 1px;
   font-family: "Dancing Script", cursive;
@@ -53,7 +50,6 @@ body {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
   font-size: 30px;
-  height: 20vh;
   width: 50%;
   display: inline-flex;
   flex-direction: column;
@@ -62,6 +58,7 @@ body {
 }
 
 #clockdiv > div {
+  font-size: 100%;
   padding: 10px;
   border-radius: 10px;
 }
@@ -84,7 +81,7 @@ body {
 /* Image classes */
 [class^="pic"] {
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover; /* Ensures the image fills its container */
   width: 100%;
 }
 
@@ -114,6 +111,7 @@ body {
 .pic23 { background-image: url('images/pic23.png'); }
 .pic24 { background-image: url('images/pic24.png'); }
 .pic25 { background-image: url('images/pic25.png'); }
+/* Add the rest of the pic classes here */
 
 /* Responsive Media Queries */
 
@@ -127,7 +125,7 @@ body {
   }
 
   .instruction {
-    width: 150vh;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -146,13 +144,16 @@ body {
 /* 481px - 768px: Tablets and small devices */
 @media (min-width: 481px) and (max-width: 768px) {
   .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
     margin: 1rem auto;
     gap: 0.5rem;
   }
 
   .instruction {
-    width: 200vh;
-    
+    width: auto;
+
   }
 
   #clockdiv {
@@ -160,8 +161,8 @@ body {
   }
 
   #clockdiv div > span {
-    height: 8vh;
-    width: 8vh;
+    height: auto;
+    width: auto;
     padding: 12px;
   }
 }
@@ -172,18 +173,28 @@ body {
     margin: 1.5rem auto;
     gap: 0.75rem;
     margin-left: 2vh;
-    height: 19vh;
+    height: 15vh;
   }
 
+  #clockdiv img[src="./images/pic27.png"] {
+    position: relative;
+    left: 2vh;
+    margin-top: 2vh;
+  }
+
+  #clockdiv {
+    height: 0;
+    width: auto;
+  }
 
   #clockdiv div > span {
-    height: 9vh;
-    width: 9vh;
+    height: auto;
+    width: auto;
     padding: 15px;
   }
 
   .instruction {
-    width: 120vh;
+    width: auto;
 
   }
 }
@@ -191,12 +202,17 @@ body {
 /* 1025px - 1200px: Large devices (small desktops) */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .container {
+    width: auto;
     margin: 2rem auto;
     gap: 1rem;
   }
 
+  #clockdiv {
+    width: auto;
+  }
+
   .instruction {
-    width: 75%;
+    width: auto;
   }
 
   #clockdiv div > span {
@@ -215,8 +231,12 @@ body {
     margin-left: 2vh;
   }
 
+  #clockdiv {
+    width: auto;
+  }
+
   .instruction {
-    width: 200vh;
+    width: auto;
   }
 
   #clockdiv div > span {
