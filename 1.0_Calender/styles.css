@@ -28,9 +28,6 @@ body {
 }
 
 .instruction {
-  position: relative;
-  left: 6vh;
-  width: 260vh;
   text-align: center;
   letter-spacing: 1px;
   font-family: "Dancing Script", cursive;
@@ -128,7 +125,7 @@ body {
   }
 
   .instruction {
-    width: 150vh;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -152,7 +149,7 @@ body {
   }
 
   .instruction {
-    width: 200vh;
+    width: auto;
 
   }
 
@@ -187,7 +184,7 @@ body {
   }
 
   .instruction {
-    width: 120vh;
+    width: auto;
 
   }
 }
@@ -200,7 +197,7 @@ body {
   }
 
   .instruction {
-    width: 75%;
+    width: auto;
   }
 
   #clockdiv div > span {
@@ -220,7 +217,7 @@ body {
   }
 
   .instruction {
-    width: 200vh;
+    width: a;
   }
 
   #clockdiv div > span {
