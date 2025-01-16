@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Base Styles */
 body {
   margin: 0;
@@ -245,3 +246,252 @@ body {
     padding: 20px;
   }
 }
+=======
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  width: 100%; /* Ensure full width scaling */
+}
+
+.container {
+  height: 20vh;
+  width: 100vh;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 13rem);
+  grid-template-rows: repeat(7, 13rem);
+  margin: 1rem auto; /* Center the container */
+}
+
+.box {
+  font-size: 3rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  background-color: #a20a0a;
+  text-align: center;
+  border-style: double;
+  border-color: white;
+  border-radius: 20px;
+}
+
+.instruction {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: xx-large;
+  border: 0;
+  border-radius: 4px;
+  background-color: white;
+  color: #a20a0a;
+}
+
+#clockdiv img[src="./images/pic27.png"] {
+  position: relative;
+  left: 4vh;
+  margin-top: 3vh;
+}
+
+#clockdiv {
+  color: #a20a0a;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#clockdiv > div {
+  font-size: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#clockdiv div > span {
+  display: inline-block;
+  height: 9vh;
+  width: 9vh;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.smalltext {
+  padding-top: 5px;
+}
+
+/* Image classes */
+[class^="pic"] {
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image fills its container */
+  width: 100%;
+}
+
+
+.pic1 { background-image: url('images/pic1.png'); }
+.pic2 { background-image: url('images/pic2.png'); }
+.pic3 { background-image: url('images/pic3.png'); }
+.pic4 { background-image: url('images/pic4.png'); }
+.pic5 { background-image: url('images/pic5.png'); }
+.pic6 { background-image: url('images/pic6.png'); }
+.pic7 { background-image: url('images/pic7.png'); }
+.pic8 { background-image: url('images/pic8.png'); }
+.pic9 { background-image: url('images/pic9.png'); }
+.pic10 { background-image: url('images/pic10.png'); }
+.pic11 { background-image: url('images/pic11.png'); }
+.pic12 { background-image: url('images/pic12.png'); }
+.pic13 { background-image: url('images/pic13.png'); }
+.pic14 { background-image: url('images/pic14.png'); }
+.pic15 { background-image: url('images/pic15.png'); }
+.pic16 { background-image: url('images/pic16.png'); }
+.pic17 { background-image: url('images/pic17.png'); }
+.pic18 { background-image: url('images/pic18.png'); }
+.pic19 { background-image: url('images/pic19.png'); }
+.pic20 { background-image: url('images/pic20.png'); }
+.pic21 { background-image: url('images/pic21.png'); }
+.pic22 { background-image: url('images/pic22.png'); }
+.pic23 { background-image: url('images/pic23.png'); }
+.pic24 { background-image: url('images/pic24.png'); }
+.pic25 { background-image: url('images/pic25.png'); }
+/* Add the rest of the pic classes here */
+
+/* Responsive Media Queries */
+
+/* 320px - 480px: Small phones */
+@media (max-width: 480px) {
+  .container {
+    margin: 0.5rem auto;
+    gap: 0.25rem;
+    height: 20vh;
+
+  }
+
+  .instruction {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  #clockdiv {
+    width: 100%;
+    align-items: center;
+  }
+
+  #clockdiv div > span {
+    height: 7vh;
+    width: 7vh;
+    padding: 10px;
+  }
+}
+
+/* 481px - 768px: Tablets and small devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin: 1rem auto;
+    gap: 0.5rem;
+  }
+
+  .instruction {
+    width: auto;
+
+  }
+
+  #clockdiv {
+    width: 100%;
+  }
+
+  #clockdiv div > span {
+    height: auto;
+    width: auto;
+    padding: 12px;
+  }
+}
+
+/* 769px - 1024px: Medium devices (landscape tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    margin: 1.5rem auto;
+    gap: 0.75rem;
+    margin-left: 2vh;
+    height: 15vh;
+  }
+
+  #clockdiv img[src="./images/pic27.png"] {
+    position: relative;
+    left: 2vh;
+    margin-top: 2vh;
+  }
+
+  #clockdiv {
+    height: 0;
+    width: auto;
+  }
+
+  #clockdiv div > span {
+    height: auto;
+    width: auto;
+    padding: 15px;
+  }
+
+  .instruction {
+    width: auto;
+
+  }
+}
+
+/* 1025px - 1200px: Large devices (small desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    width: auto;
+    margin: 2rem auto;
+    gap: 1rem;
+  }
+
+  #clockdiv {
+    width: auto;
+  }
+
+  .instruction {
+    width: auto;
+  }
+
+  #clockdiv div > span {
+    height: 9vh;
+    width: 9vh;
+    padding: 18px;
+  }
+}
+
+/* 1201px and above: Extra-large devices (desktops) */
+@media (min-width: 1201px) {
+  .container {
+    height: 25vh;
+    margin: 2rem auto;
+    gap: 1rem;
+    margin-left: 2vh;
+  }
+
+  #clockdiv {
+    width: auto;
+  }
+
+  .instruction {
+    width: auto;
+  }
+
+  #clockdiv div > span {
+    height: 9vh;
+    width: 9vh;
+    padding: 20px;
+  }
+}
+>>>>>>> cc2e572679062596ebe336a27cc7d8eb54f93a48
