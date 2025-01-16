@@ -44,7 +44,7 @@ const boxes = [
 boxes.forEach(({ selector, className }) => handleBoxClick(selector, className));
 
 // Getting formated date from date string
-let deadline = new Date("dec 25, 2024 00:00:00").getTime();
+let deadline = new Date("dec 25, 2025 00:00:00").getTime();
 
 // Calling defined function at certain interval
 let x = setInterval(function () {
