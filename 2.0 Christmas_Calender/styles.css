@@ -27,7 +27,7 @@ h1 {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-top: 15rem;
-  width: 100%; 
+  width: 95vw;
 }
 
 a {
@@ -54,7 +54,7 @@ a:hover {
 }
 
 /* Responsive Breakpoints */
-@media (max-width: 475px) {
+@media (min-width: 360px) {
   h1 {
     font-size: 2.5rem;
     top: 120px; 
@@ -71,7 +71,7 @@ a:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 3rem;
     top: 140px; 
@@ -97,7 +97,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 4rem;
     top: 160px;
@@ -110,7 +110,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   h1 {
     font-size: 4.5rem;
     top: 170px;
@@ -123,36 +123,3 @@ a:hover {
   }
 }
 
-@media (max-width: 1536px) {
-  h1 {
-    font-size: 4rem;
-    top: 180px;
-  }
-
-  a {
-    font-size: x-large;
-    padding: 0.5rem 1.5rem;
-    top: 180px;
-  }
-}
-
-@media (min-width: 1536px) {
-  #container {
-    height: 600px; 
-  }
-
-  h1 {
-    font-size: 6rem; 
-    top: 200px;
-  }
-
-  a {
-    font-size: large; 
-    padding: 0.5rem 2rem; 
-    top: 200px;
-  }
-
-  #container {
-    max-width: 1920px;
-  }
-}
